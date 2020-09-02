@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		9F6DE382250040B600F38973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6DE381250040B600F38973 /* AppDelegate.swift */; };
 		9F6DE384250040B600F38973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6DE383250040B600F38973 /* SceneDelegate.swift */; };
-		9F6DE386250040B600F38973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6DE385250040B600F38973 /* ViewController.swift */; };
+		9F6DE386250040B600F38973 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6DE385250040B600F38973 /* CardsViewController.swift */; };
 		9F6DE389250040B600F38973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6DE387250040B600F38973 /* Main.storyboard */; };
 		9F6DE38B250040B900F38973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6DE38A250040B900F38973 /* Assets.xcassets */; };
 		9F6DE38E250040B900F38973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6DE38C250040B900F38973 /* LaunchScreen.storyboard */; };
+		9F6DE39B2500410200F38973 /* ExtensionUivew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6DE3982500410200F38973 /* ExtensionUivew.swift */; };
+		9F6DE39C2500410200F38973 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6DE3992500410200F38973 /* UIImageView.swift */; };
+		9F6DE39D2500410200F38973 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6DE39A2500410200F38973 /* UILabel.swift */; };
+		9F6DE39F2500433E00F38973 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6DE39E2500433E00F38973 /* CardCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F6DE37E250040B600F38973 /* Food Ordering Design APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Ordering Design APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6DE381250040B600F38973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F6DE383250040B600F38973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F6DE385250040B600F38973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F6DE385250040B600F38973 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		9F6DE388250040B600F38973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F6DE38A250040B900F38973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6DE38D250040B900F38973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F6DE38F250040B900F38973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6DE3982500410200F38973 /* ExtensionUivew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUivew.swift; sourceTree = "<group>"; };
+		9F6DE3992500410200F38973 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		9F6DE39A2500410200F38973 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		9F6DE39E2500433E00F38973 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				9F6DE381250040B600F38973 /* AppDelegate.swift */,
 				9F6DE383250040B600F38973 /* SceneDelegate.swift */,
-				9F6DE385250040B600F38973 /* ViewController.swift */,
+				9F6DE397250040DD00F38973 /* helpers */,
+				9F6DE396250040D400F38973 /* view */,
+				9F6DE395250040C500F38973 /* controller */,
 				9F6DE387250040B600F38973 /* Main.storyboard */,
 				9F6DE38A250040B900F38973 /* Assets.xcassets */,
 				9F6DE38C250040B900F38973 /* LaunchScreen.storyboard */,
 				9F6DE38F250040B900F38973 /* Info.plist */,
 			);
 			path = "Food Ordering Design APP";
+			sourceTree = "<group>";
+		};
+		9F6DE395250040C500F38973 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F6DE385250040B600F38973 /* CardsViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9F6DE396250040D400F38973 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9F6DE39E2500433E00F38973 /* CardCollectionViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9F6DE397250040DD00F38973 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F6DE3982500410200F38973 /* ExtensionUivew.swift */,
+				9F6DE3992500410200F38973 /* UIImageView.swift */,
+				9F6DE39A2500410200F38973 /* UILabel.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6DE386250040B600F38973 /* ViewController.swift in Sources */,
+				9F6DE39B2500410200F38973 /* ExtensionUivew.swift in Sources */,
+				9F6DE39C2500410200F38973 /* UIImageView.swift in Sources */,
+				9F6DE386250040B600F38973 /* CardsViewController.swift in Sources */,
 				9F6DE382250040B600F38973 /* AppDelegate.swift in Sources */,
+				9F6DE39F2500433E00F38973 /* CardCollectionViewCell.swift in Sources */,
+				9F6DE39D2500410200F38973 /* UILabel.swift in Sources */,
 				9F6DE384250040B600F38973 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hosam.net.Food-Ordering-Design-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hosam.net.Food-Ordering-Design-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
